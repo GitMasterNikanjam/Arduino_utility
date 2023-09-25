@@ -3,7 +3,35 @@
 // there are two way of read pwm. 1: use external interrupt. 2: us pulsein function.
 // use external interrupts for read pwm pulses is very accurate and effecient than use pulsin function.
 
-// in bluepill 
+// external interrupts pin can use on bluepill is bellow:
+//  EXTI0: PA0
+//  EXTI1: PA1
+//  EXTI2: PA2
+//  EXTI3: PA3
+//  EXTI4: PA4
+//  EXTI5: PA5, PB5
+//  EXTI6: PA6, PB6
+//  EXTI7: PA7, PB7
+//  EXTI8: PA8, PB8
+//  EXTI9: PA9, PB9
+//  EXTI10: PA10, PB10
+//  EXTI11: PA11, PB11
+//  EXTI12: PA12, PB12
+//  EXTI13: PA13, PB13
+//  EXTI14: PA14, PB14
+//  EXTI15: PA15, PB15
+
+//  EXTI lines are a limited resource on the microcontroller,
+//  and each EXTI line can typically be associated with multiple pins that share the same line. 
+//  In the case of EXTI14, both PA14 and PB14 share the same EXTI line,
+//  so you have to choose one or the other to use as an external interrupt source.
+//  
+//  If you need to use multiple external interrupts simultaneously,
+//  you will need to choose pins that are associated with different EXTI lines.
+//  You can refer to the list of EXTI lines and their corresponding pins in the previous response
+//  to see which combinations are available for your specific use case.
+
+
 #include <Servo.h>
 
 Servo myservo;
