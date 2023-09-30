@@ -1,2 +1,2 @@
-goodbye
+goodbye 1 2 3
 
