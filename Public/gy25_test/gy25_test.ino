@@ -1,4 +1,4 @@
-// Project: GY-25 test Code (test in arduino mega2560)
+// Project: GY-25 test Code (tested in arduino mega2560)
 
 // GY25 is a module that have a mpu6050 sensor and a stm32 microcontroller.
 // this module can use for get Euler angle from serial port.
